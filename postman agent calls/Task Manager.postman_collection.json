@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "9d1fde82-b79c-4448-bff7-ff12f71d2d80",
+		"name": "Task Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25821167"
+	},
+	"item": [
+		{
+			"name": "Get all tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"ok\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5001/",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/chinmay",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"chinmay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/chinmay",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"chinmay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/chinmay",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"chinmay"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
